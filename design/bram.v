@@ -33,7 +33,6 @@ module dual_port_bram #(
     localparam DEPTH = (1 << ADDR_WIDTH);
 
     // FPGA hint for BRAM inference
-    (* ram_style = "block" *) 
     reg [DATA_WIDTH-1:0] mem [0:DEPTH-1];
 
     integer i;
